@@ -3,11 +3,17 @@ def is_even(n):
         return "чётное" if int(n) % 2 == 0 else "нечётное"
     return "не целое число"
 
+def parse_number(value: str):
+    try:
+        num = float(value)
+        return int(num) if num.is_integer() else num
+    except ValueError:
+        raise ValueError("Некорректное число")
 
 def run():
     try:
-        num1 = float(input("Введите первое число: ").strip())
-        num2 = float(input("Введите второе число: ").strip())
+        num1 = parse_number(input("Введите первое число: "))
+        num2 = parse_number(input("Введите второе число: "))
 
         sum_val = num1 + num2
         avg = sum_val / 2
