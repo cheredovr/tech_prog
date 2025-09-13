@@ -1,18 +1,18 @@
 import name
-import twonumb
-import strok
+import two_numbers
+import string_ops
 import chet
-import facktorial
-import fibanachi
+import factorial
+import fibonacci
 
 # Словарь программ: "название": функция
 PROGRAMS = {
     "Приветствие по имени": name.run,
-    "Операции с двумя числами": twonumb.run,
-    "Операции со строкой": strok.run,
+    "Операции с двумя числами": two_numbers.run,
+    "Операции со строкой": string_ops.run,
     "Вывод чётных чисел от 1 до 10": chet.run,
-    "Подсчёт факториала": facktorial.run,
-    "Найти N-ое число Фибоначчи": fibanachi.run,
+    "Подсчёт факториала": factorial.run,
+    "Найти N-ое число Фибоначчи": fibonacci.run,
 }
 
 EXIT_TEXT = "Выход"

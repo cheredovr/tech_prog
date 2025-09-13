@@ -1,11 +1,11 @@
 from tqdm import tqdm
 
-start = 1 #Начало диапазона
-end = 10 #Конец диапазона
-step = 2 #Шаг
+START = 1   # Начало диапазона
+END = 10    # Конец диапазона
+STEP = 2    # Шаг
 
 def run():
-    print("Чётные числа от 1 до 10:")
-    for i in tqdm(range(start + 1, end + 1, step), desc="Вывод чётных чисел", ncols=100):
+    print(f"Чётные числа от {START} до {END}:")
+    for i in tqdm(range(START + 1, END + 1, STEP), desc="Вывод чётных чисел", ncols=100):
         print(i, end=' ')
     print()
